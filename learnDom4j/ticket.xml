@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ticket>
+    <ticketinfo>ticketinfo.xml 的base64编码</ticketinfo>
+    <signature>ticketinfo.xml 的签名值的base64编码</signature>
+</ticket>
