@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ticketinfo version="1">
+    <signature oid="1.2.3.4.5.6" desc="身份票据令牌签名算法"/>
+    <userinfo>
+        <rsmsid>统一资源编码</rsmsid>
+        <dncode>用户证书标识</dncode>
+        <ip>用户IP地址</ip>
+        <enccert>用户加密证书base64编码</enccert>
+        <sigcert>用户签名证书base64编码</sigcert>
+        <certchain>用户证书链base64编码</certchain>
+    </userinfo>
+    <issueinfo>
+        <dncode>颁发者证书标识</dncode>
+        <ip>颁发者IP地址</ip>
+        <cert>颁发者证书base64编码</cert>
+        <certchain>票据颁发者证书链base64编码</certchain>
+    </issueinfo>
+    <validfrom>1463054757835</validfrom>
+    <validto>1463054772835</validto>
+</ticketinfo>

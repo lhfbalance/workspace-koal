@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<student>
+	<age>22</age>
+	<classroom>
+		<grade>4</grade>
+		<id>1</id>
+		<name>软件工程</name>
+	</classroom>
+	<id>101</id>
+	<name>赵梅</name>
+</student>

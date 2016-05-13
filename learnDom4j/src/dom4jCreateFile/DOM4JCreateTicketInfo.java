@@ -1,14 +1,8 @@
 package dom4jCreateFile;
 
-import java.io.BufferedOutputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
-import java.io.UnsupportedEncodingException;
 
 import org.dom4j.Document;
 import org.dom4j.DocumentHelper;
@@ -54,48 +48,7 @@ public class DOM4JCreateTicketInfo {
 
     xmlWriter.write(document);
     xmlWriter.close();
-    /***************把文件读byte[]*******************/
-    ByteArrayOutputStream bo = new ByteArrayOutputStream();
-    XMLWriter xmlWriter2 = new XMLWriter(bo, format);
-    xmlWriter2.write(document);
-    bo.toByteArray();
     
-    /***************把文件读byte[]*******************/
-    byte[] byteArray = new XML2Byte().File2ByteArray(new File("ticketinfo.xml"));
-
-
-    /***************直接把document转成byte[],这样别人是无法解析的*******************/
-    byte[] byteArray1 = document.toString().getBytes();
-    //
-    // ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-    // ObjectOutputStream objectOutputStream = null;
-    // try {
-    // objectOutputStream = new ObjectOutputStream(byteArrayOutputStream);
-    // } catch (IOException e) {
-    // System.err.println("objectOutputStream");
-    // }
-    // try {
-    // objectOutputStream.writeObject(document);
-    // } catch (IOException e) {
-    // System.err.println("objectOutputStream.writeObject");
-    // }
-    // try {
-    // objectOutputStream.close();
-    // } catch (IOException e) {
-    // System.err.println("objectOutputStream.close");
-    // }
-    // byte[] byteArray2 = byteArrayOutputStream.toByteArray();
-
-//    ByteArrayOutputStream byteArrayOutputStream2 = new ByteArrayOutputStream();
-//    XMLWriter xmlWriter1 = new XMLWriter(byteArrayOutputStream2);
-//    xmlWriter1.write(document);
-//    xmlWriter.close();
-//    byte[] byteArray3 = byteArrayOutputStream2.toByteArray();
-    if (byteArray.length == byteArray1.length) {
-      System.out.println("byteArray.length == byteArray1.length");
-    } else {
-      System.out.println("byteArray.length != byteArray1.length");
-    }
     
 
   }

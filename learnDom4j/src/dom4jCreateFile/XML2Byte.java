@@ -20,8 +20,8 @@ public class XML2Byte {
     
     BufferedOutputStream byteout = new BufferedOutputStream(fileOnputStream);
     
-    byteout.w
-    byteout.close();
+    //byteout.w
+    //byteout.close();
     //fileOnputStream.close();
     return bs;
   }

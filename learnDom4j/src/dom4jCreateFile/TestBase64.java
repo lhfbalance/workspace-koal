@@ -25,13 +25,13 @@ public class TestBase64 {
   @SuppressWarnings("resource")
   public static void main(String[] args) throws Exception {
 
-    String ss = "131321";
-    SAXReader reader = new SAXReader();
-    Encoder encoder = Base64.getEncoder();
-    
-    encoder.encode(ss.getBytes());
-    //FileInputStream in = new FileInputStream("ticketinfo.xml");
-    Document document = reader.read(new File("ticketinfo.xml"));
+//    String ss = "131321";
+//    SAXReader reader = new SAXReader();
+//    Encoder encoder = Base64.getEncoder();
+//    new String(bytes, "UTF-8");
+//    encoder.encode(ss.getBytes());
+//    //FileInputStream in = new FileInputStream("ticketinfo.xml");
+//    Document document = reader.read(new File("ticketinfo.xml"));
   }
 
 }

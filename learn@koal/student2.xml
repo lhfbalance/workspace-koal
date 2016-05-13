@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<student>
+    <age>22</age>
+    <classroom>
+        <id>618</id>
+        <name>haifeng</name>
+        <grade>2</grade>
+    </classroom>
+    <ID>618</ID>
+    <name>haifeng</name>
+</student>
