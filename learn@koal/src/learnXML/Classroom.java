@@ -5,6 +5,7 @@ package learnXML;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAttribute;
 
 /**
  * @author LouHF
@@ -15,7 +16,7 @@ public class Classroom {
 
   private int id;
   private String name;
-  private int grade;
+  @XmlAttribute private int grade;
 
   /**
    * @return the id
