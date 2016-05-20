@@ -45,16 +45,16 @@ public class testByte2Int {
     }
 
     public static int byte2intBig(byte[] res) {
-       // 一个byte数据左移24位变成0x??000000，再右移8位变成0x00??0000
-      //byte[] res 是网络字节序（大端）
-      int targets = (res[3] & 0xff) | ((res[2] << 8) & 0xff00) // | 按位或
+       // 涓�涓猙yte鏁版嵁宸︾Щ24浣嶅彉鎴�0x??000000锛屽啀鍙崇Щ8浣嶅彉鎴�0x00??0000
+      //byte[] res 鏄綉缁滃瓧鑺傚簭锛堝ぇ绔級
+      int targets = (res[3] & 0xff) | ((res[2] << 8) & 0xff00) // | 鎸変綅鎴�
           | ((res[1] << 24) >>> 8) | (res[0] << 24);
       return targets;
     }
     public static int byte2int(byte[] res) {
-      // 一个byte数据左移24位变成0x??000000，再右移8位变成0x00??0000
-     //byte[] res 是网络字节序（大端）
-     int targets = (res[0] & 0xff) | ((res[1] << 8) & 0xff00) // | 按位或
+      // 涓�涓猙yte鏁版嵁宸︾Щ24浣嶅彉鎴�0x??000000锛屽啀鍙崇Щ8浣嶅彉鎴�0x00??0000
+     //byte[] res 鏄綉缁滃瓧鑺傚簭锛堝ぇ绔級
+     int targets = (res[0] & 0xff) | ((res[1] << 8) & 0xff00) // | 鎸変綅鎴�
          | ((res[2] << 24) >>> 8) | (res[3] << 24);
      return targets;
    }
